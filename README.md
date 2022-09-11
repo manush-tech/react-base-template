@@ -1,6 +1,6 @@
 # React Base Project
 
-This a sample react project we regularly use at Manush Teach.
+This a sample react project we regularly use at Manush Technologies.
 
 ## Usage
 
@@ -43,4 +43,5 @@ This a sample react project we regularly use at Manush Teach.
         'prettier/prettier': 0,
         'linebreak-style': 0,
 
-    3. if you encounter error when comitting to github --> most probable reason is that your code does not meet our standards. Please fix the linting errors in that case.
+    3. if you encounter error when comitting to github --> most probable reason is
+       that your code does not meet our standards. Please fix the linting errors in that case.
