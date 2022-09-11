@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# React Base Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This a sample react project we regularly use at Manush Teach.
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+    Starting the project
 
-### `yarn start`
+```bash
+    yarn start:dev # start project in dev mode
+    yarn start:stage # start project in stage mode
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Build the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+    yarn build:prod # build project in production mode
+    yarn build:stage # build project in stage mode
+```
 
-### `yarn test`
+## Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    1. pages --> contains all page component
+    2. components --> contains all components
+    3. styles --> contains all styles/css
+    4. contants --> contains all const values
+    5. layout --> contains app layout for pages
+    6. routes --> contains app routes
+    7. services --> contains axios and api call configs
+    8. utils --> contains all utility functions which may be reused
 
-### `yarn build`
+    .env.* contains all env variable for different mode
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Notes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    1. Eslint and prettier is installed to make sure code quality is maintained.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    2. if you are on windows machine and linter gives error
+    change -->
+        'prettier/prettier': 'error',
+        'linebreak-style': ['error', 'unix'],
+    to --->
+        'prettier/prettier': 0,
+        'linebreak-style': 0,
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    3. if you encounter error when comitting to github --> most probable reason is that your code does not meet our standards. Please fix the linting errors in that case.
